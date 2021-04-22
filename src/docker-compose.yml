@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tds.api:
+    image: ${DOCKER_REGISTRY-}tdsapi
+    build:
+      context: .
+      dockerfile: TDS.API/Dockerfile
